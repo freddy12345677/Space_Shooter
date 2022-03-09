@@ -27,10 +27,7 @@ public class Label extends JLabel {
 		
 		
 		
-		for(int i=250;i>=0;i--) {
-		g.setColor(new Color(100, 100, 100, i));
-		g.fillRect(0, 0, Var.screenWidth, Var.screenHeight);
-		}
+		
 		if (Var.inGame) { // Damit sichn alles nur bewegt wenn keine Pause gedrückt wird
 
 			g.drawImage(Var.ib1, 0, Var.backgroundY1, 1920, 1080, null); //Bilder der Hintergründe werden angezeigt
