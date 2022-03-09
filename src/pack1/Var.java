@@ -92,7 +92,7 @@ public class Var {
 
 	public Var() {
 		//Bilder werden Bilderdateien zugewiesen
-		try { 
+		try { //was ausgeführt werden sollte wenn möglich
 			ib1 = ImageIO.read(new File("background.jpg"));
 			ib2 = ImageIO.read(new File("background.jpg"));
 			iplayer = ImageIO.read(new File("spaceship.png"));
@@ -117,12 +117,12 @@ public class Var {
 			}
 			
 
-		} catch (IOException e) {
+		} catch (IOException e) {//falls nicht möglich gibt eine Fehlernachricht aus ohne das Programm zu crashen
 			e.printStackTrace(); //Fehlernachricht falls Bilder nicht geladen werden können
 			System.out.println("Bilder konnten nicht geladen werden");
 
 		}
-		//Werte zu den Array listen von oben
+		//Werte zu den Array von oben
 		enemySpeed[0] = 3;
 		enemySpeed[1] = 5;
 		enemySpeed[2] = 3;

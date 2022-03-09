@@ -19,14 +19,14 @@ public class CoinMovement {
 		Var.coinY2[0] = -2000;
 		Var.coinY2[1] = -3000;
 
-	Var.coinX3 = (int)(Math.random()*1900);// Der Münze der Wertigkeit 10 wird eine Position zugewiesen
+	Var.coinX3 = (int)(Math.random()*1900);// Der Münze der Wertigkeit 10 wird eine zufällige Position zugewiesen
 		Var.coinY3 = -4000;
 
 		movement = new Timer();
 		movement.scheduleAtFixedRate(new TimerTask() {
 			@Override
 			public void run() {
-				if (Var.inGame) {   //passiert nur wenn man icht im Spiel ist
+				if (Var.inGame) {   //passiert nur wenn man nicht im Spiel ist
 					for (int i = 0; i <= 4; i++) {
 						Var.coinY1[i] += Var.coinspeed1[i]; //durch for-Schleife werden alle Münzen um ihre Geshw. bewegt
 

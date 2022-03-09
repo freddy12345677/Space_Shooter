@@ -12,7 +12,7 @@ public class FlammeAnimation {
 		flammetimer.scheduleAtFixedRate(new TimerTask() {
 			@Override
 			public void run() {
-				if (temp == 0) {
+				if (temp == 0) {//durch Timer wird eine Variable abwechselnd von 1 auf 0 auf 1... gesetzt -> 2 Bilder für Feueranimation
 					Var.flammeanimation = 0;
 					temp++;
 				} else if (temp == 1) {

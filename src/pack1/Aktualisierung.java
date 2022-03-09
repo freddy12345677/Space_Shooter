@@ -14,14 +14,14 @@ public class Aktualisierung {//damit nachdem die Buttons betätigt wurden das Pro
 			public void run() {
 				if (Var.inMenu) {//wird nur asugeführt wenn man nicht im Spiel ist 
 					if (tempAktualisierung == 0) {
-						Var.btnresume.requestFocus();
+						Var.btnresume.requestFocus();//Button wird in den Vordergrund gerückt
 						
-						Var.btnshop.requestFocus();
-						Var.btnexit.requestFocus();
+						Var.btnshop.requestFocus();//Button wird in den Vordergrund gerückt
+						Var.btnexit.requestFocus();//Button wird in den Vordergrund gerückt
 						tempAktualisierung++;
 
 					} else if (tempAktualisierung == 1) {
-						Var.jf1.requestFocus();
+						Var.jf1.requestFocus();//jf1 wird in den Vordergrund gerückt
 					}
 				}
 			}
