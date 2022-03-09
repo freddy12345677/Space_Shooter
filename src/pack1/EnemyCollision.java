@@ -45,9 +45,9 @@ public class EnemyCollision {
 							
 							
 							if (Var.x >= Var.enemyX2 - 130 && Var.x <= Var.enemyX2 + 860
-									&& Var.y >= Var.enemyY2 - 860 && Var.y <= Var.enemyY2 + 860) {//wird geprüft ob der Spieler mit dem Mond kollidiert
+									&& Var.y >= Var.enemyY2 - 150 && Var.y <= Var.enemyY2 + 860) {//wird geprüft ob der Spieler mit dem Mond kollidiert
 								Var.hp = 0; //falls er kollidiert werden die Leben des Spieler sofort 0 gesetzt(man stirbt also immer)
-								Var.lost =true;//Zustand lsot wird true gesetzt
+								Var.lost =true;//Zustand lost wird true gesetzt
 								
 								Var.enemyY2 = -3000;//Mond wird nach oben versetzt
 								Var.moonhp=4;    // bekommt wieder volle Leben falls er angeschossen wurde dass er diese Lebensanzahl nicht behält

@@ -10,7 +10,7 @@ public class CoinMovement {
 	public CoinMovement() {
 		for (int i = 0; i <= 4; i++) {//durch for-Schleife wird allen Münzen der ArrayListe eine zufällige X-Koordinate und eine Y-Koordinate zugewiesen
 			Var.coinX1[i] = (int)(Math.random()*1900);
-			Var.coinY1[i] = -200 - temp;
+			Var.coinY1[i] = -300 - temp;
 
 			temp += 600;
 		}
@@ -19,7 +19,7 @@ public class CoinMovement {
 		Var.coinY2[0] = -2000;
 		Var.coinY2[1] = -3000;
 
-	Var.coinX3 = (int)(Math.random()*1900);// Der MÜnze der Wertigkeit 10 wird eine Position zugewiesen
+	Var.coinX3 = (int)(Math.random()*1900);// Der Münze der Wertigkeit 10 wird eine Position zugewiesen
 		Var.coinY3 = -4000;
 
 		movement = new Timer();

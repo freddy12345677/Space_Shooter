@@ -139,6 +139,25 @@ public class Var {
 		coinspeed2[0] = 3;
 		coinspeed2[1] = 3;
 		
+		enemyX[0] = -1000;
+		enemyX[1] = -1000;
+		enemyX[2] = -1000;
+		enemyX[3] = -1000;
+		enemyX[4] = -1000;
+		
+		 coinY1[0]=-100;
+		 coinY1[1]=-100;
+		 coinY1[2]=-100;
+		 coinY1[3]=-100;
+		 coinY1[4]=-100;
+		 
+		 coinY2[0]=-100;
+		 coinY2[1]=-100;
+		 coinY2[2]=-100;
+		 coinY2[3]=-100;
+		 coinY2[4]=-100;
+		
+		
 		
 		
 		

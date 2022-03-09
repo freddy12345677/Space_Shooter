@@ -23,7 +23,13 @@ public class Label extends JLabel {
 
 		Graphics2D g2d = (Graphics2D) g;
 		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-
+		
+		
+		
+		for(int i=250;i>=0;i--) {
+		g.setColor(new Color(100, 100, 100, i));
+		g.fillRect(0, 0, Var.screenWidth, Var.screenHeight);
+		}
 		if (Var.inGame) { // Damit sichn alles nur bewegt wenn keine Pause gedrückt wird
 
 			g.drawImage(Var.ib1, 0, Var.backgroundY1, 1920, 1080, null); //Bilder der Hintergründe werden angezeigt
@@ -68,15 +74,17 @@ public class Label extends JLabel {
 
 			// Lebensanzeige(für jeden Fall eine Anzeige
 			if (Var.hp == 0) {
+				
 			} else if (Var.hp == 1) {
-				g.drawImage(Var.iheart, 10, 10, 80, 80, null);
+				
+				g.drawImage(Var.iheart, 10, 10, 100, 100, null);
 			} else if (Var.hp == 2) {
-				g.drawImage(Var.iheart, 10, 10, 80, 80, null);
-				g.drawImage(Var.iheart, 110, 10, 80, 80, null);
+				g.drawImage(Var.iheart, 10, 10, 100, 100, null);
+				g.drawImage(Var.iheart, 120, 0, 100, 100, null);
 			} else if (Var.hp == 3) {
-				g.drawImage(Var.iheart, 10, 10, 80, 80, null);
-				g.drawImage(Var.iheart, 110, 10, 80, 80, null);
-				g.drawImage(Var.iheart, 210, 10, 80, 80, null);
+				g.drawImage(Var.iheart, 10, 10, 100, 100, null);
+				g.drawImage(Var.iheart, 120, 10, 100, 100, null);
+				g.drawImage(Var.iheart, 240, 10, 100, 100, null);
 			}
 			//munitionsanzeige:
 			g.drawImage(Var.ishot, 520, 10, 20, 70, null);
@@ -100,46 +108,13 @@ public class Label extends JLabel {
 
 				g.drawImage(Var.iplayer, Var.x, Var.y, 150, 150, null); // Spieler wird angzeigt
 
-				if (Var.exanimation == 0) { //verkomplizierte Darstellunng der Explosionsanimation bei einer Collsion
-					g.setColor(new Color(230, 0, 0, 45));
-					g.fillRect(0, 0, Var.screenWidth, Var.screenHeight);
-					g.drawImage(Var.iexplosion[0], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
-				} else if (Var.exanimation == 1) {
-					g.drawImage(Var.iexplosion[1], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
-				} else if (Var.exanimation == 2) {
-					g.drawImage(Var.iexplosion[2], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
-				} else if (Var.exanimation == 3) {
-					g.drawImage(Var.iexplosion[3], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
-				} else if (Var.exanimation == 4) {
-					g.drawImage(Var.iexplosion[4], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
-				} else if (Var.exanimation == 5) {
-					g.drawImage(Var.iexplosion[5], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
-				} else if (Var.exanimation == 6) {
-					g.drawImage(Var.iexplosion[6], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
-				} else if (Var.exanimation == 7) {
-					g.drawImage(Var.iexplosion[7], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
-				} else if (Var.exanimation == 8) {
-					g.drawImage(Var.iexplosion[8], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
-				} else if (Var.exanimation == 9) {
-					g.drawImage(Var.iexplosion[9], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
-				} else if (Var.exanimation == 10) {
-					g.drawImage(Var.iexplosion[10], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
-				} else if (Var.exanimation == 11) {
-					g.drawImage(Var.iexplosion[11], Var.x, Var.y, 120, 120, null);
-					g.setColor(new Color(230, 0, 0, 45));
+				for(int i = 0; i<=10;i++) {
+					if(Var.exanimation==i) {
+					g.drawImage(Var.iexplosion[i],Var.x,Var.y,150,150,null);
+					}
 				}
 
+				
 			}
 			repaint();
 

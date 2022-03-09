@@ -40,7 +40,7 @@ public class PlayerMovement {
 
 						}
 
-					} else if (Var.moveright == true) {
+					} else if (Var.moveright == true&&Var.x<Var.screenWidth-150) {
 						if (Var.x < 1900) {
 							Var.x += Var.movespeed;
 							Var.movementdetected = 1;
