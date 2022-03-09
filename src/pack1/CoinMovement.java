@@ -30,7 +30,7 @@ public class CoinMovement {
 					for (int i = 0; i <= 4; i++) {
 						Var.coinY1[i] += Var.coinspeed1[i]; //durch for-Schleife werden alle Münzen um ihre Geshw. bewegt
 
-						if (Var.coinY1[i] >= Var.screenHeight) {//falls sie nichtmehr zu sehen sind werden sie nach oben versetzt und bekommen einen neune zufälligen X-wert zugeschrieben
+						if (Var.coinY1[i] >= Var.screenHeight) {//falls sie nichtmehr zu sehen sind werden sie nach oben versetzt und bekommen einen neuen zufälligen X-wert zugeschrieben
 							Var.coinY1[i] = -1500;
 							Var.coinX1[i] = (int)(Math.random()*1900);
 						}
@@ -44,7 +44,7 @@ public class CoinMovement {
 						}
 					}
 
-					Var.coinY3 += Var.coinspeed3;//Das selbe wie für die Münzen obens
+					Var.coinY3 += Var.coinspeed3;//Das selbe wie für die Münzen oben 
 
 					if (Var.coinY3 >= Var.screenHeight) {
 						Var.coinY3 = -4000;
