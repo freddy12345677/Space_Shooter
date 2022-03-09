@@ -1,3 +1,4 @@
+
 package pack1;
 
 import javax.imageio.ImageIO;
@@ -18,23 +19,23 @@ public class Var {
 	static int x = 700, y = 700; // Spieler Position
 	static int flammeanimation;  //zustand, der animation(welches Bild angezeigt wird)
 
-	static int enemyX[] = new int[5], enemyY[] = new int[5]; //Array mit den Coordinaten aller Asteroiden
+	static int enemyX[] = new int[5], enemyY[] = new int[5]; //Array mit den Koordinaten aller Asteroiden
 	static int enemySpeed[] = new int[5];	                 //Array mit allen Geschwindigkeiten der Asteroiden
-	static int enemyX2 = -20000;        //Anfangskoordinate des Mondes(soll  nicht zu sehen sein)
+	static int enemyX2 = -20000;        //Anfangskoordinate des Mondes(der Mond soll nicht zu sehen sein)
 	static int enemyY2 = -20000;
 	static int enemy2speed = 3;//geschw des Mondes
 	static int moonhp =4;      //Leben des Mondes
 	
-	static int coinX1[]= new int[5];       //Array mit allen Koordinaten der Münzen der WErtigkeit 1
+	static int coinX1[]= new int[5];       //Array mit allen Koordinaten der Münzen der Wertigkeit 1
 	static int coinY1[]= new int[5];
-	static int coinX2[]= new int[5];         //Array mit allen Koordinaten der Münzen der WErtigkeit 5
+	static int coinX2[]= new int[5];         //Array mit allen Koordinaten der Münzen der Wertigkeit 5
 	static int coinY2[]= new int[5];
 	static int coinX3;                       //Koordinaten der Münzen mit der Wertigkeit 10
 	static int coinY3;
 	
-	static int coinspeed1[] = new int [5];    //Array mit den Geschwindigkeiten der MÜnzen der Wertigkeit 1
-	static int coinspeed2[] = new int [2];       //Array mit den Geschwindigkeiten der MÜnzen der Wertigkeit 5
-	static int coinspeed3 = 6;             //Geschwindigkeit der MÜnze der Wertigkeit 10
+	static int coinspeed1[] = new int [5];    //Array mit den Geschwindigkeiten der Münzen der Wertigkeit 1
+	static int coinspeed2[] = new int [2];       //Array mit den Geschwindigkeiten der Münzen der Wertigkeit 5
+	static int coinspeed3 = 6;             //Geschwindigkeit der Münze der Wertigkeit 10
 	
 	static int coins = 0;                   //Anzahl der gesammelten Münzen
 	static int hp = 3;                      //Anzahl der eigenen Leben
@@ -42,7 +43,7 @@ public class Var {
 	 
 	static boolean shot;                   //Zustand ob gerade Geschossen wird oder nicht
 	static boolean shotcollision;          //Zustand ob der Schuss einen Gegner getroffen hat
-	static int shotX;               //Koordinaten der SChusses
+	static int shotX;               //Koordinaten der Schusses
 	static int shotY;
 	
 	static int shieldactive = 0;       //Zustand ob ein Schild aktiv ist
@@ -51,7 +52,7 @@ public class Var {
 	static int shotprice =25;      //Preise der Items die man im Shop kaufen kann
 	static int shieldprice = 65;
 	
-	static boolean inGame = true, inOptions = false, inMenu = false, inShop = false;     //Zustände um zu prüfen ob der SPieler im Menü... usw ist
+	static boolean inGame = true, inOptions = false, inMenu = false, inShop = false;     //Zustände um zu prüfen ob der Spieler im Menü... usw ist
 	
 	
 	
@@ -64,7 +65,7 @@ public class Var {
 	
 	static int movespeed = 3;           //Geschw. des Spielers
 
-	static int movementdetected = 0; // zustand ob sich der Spieler bewegt
+	static int movementdetected = 0; // zustand ob sich der Spieler bewegt(zum testen wird nicht im Spiel verwendet
 
 	// KeyHandler
 	static boolean moveup = false, movedown = false, moveleft = false, moveright = false;
@@ -73,7 +74,7 @@ public class Var {
 	//Label
 	static Label lbl1;
 
-	// Bilder werden zugewiesen
+	// Bilder als BufferedImage gespeichert
 	static BufferedImage ib1, ib2;
 	static BufferedImage iplayer;
 	static BufferedImage iflamme1, iflamme2;
@@ -172,3 +173,4 @@ public class Var {
 	}
 
 }
+

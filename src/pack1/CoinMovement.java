@@ -1,3 +1,5 @@
+
+
 package pack1;
 
 import java.util.Timer;
@@ -8,7 +10,7 @@ public class CoinMovement {
 	private int temp = 0;
 
 	public CoinMovement() {
-		for (int i = 0; i <= 4; i++) {//durch for-Schleife wird allen Münzen der ArrayListe eine zufällige X-Koordinate und eine Y-Koordinate zugewiesen
+		for (int i = 0; i <= 4; i++) {//durch for-Schleife wird allen Münzen des Arrays eine zufällige X-Koordinate und eine Y-Koordinate zugewiesen
 			Var.coinX1[i] = (int)(Math.random()*1900);
 			Var.coinY1[i] = -300 - temp;
 
@@ -19,18 +21,18 @@ public class CoinMovement {
 		Var.coinY2[0] = -2000;
 		Var.coinY2[1] = -3000;
 
-	Var.coinX3 = (int)(Math.random()*1900);// Der Münze der Wertigkeit 10 wird eine zufällige Position zugewiesen
+	Var.coinX3 = (int)(Math.random()*1900);// Die Münze der Wertigkeit 10 wird eine zufällige Position zugewiesen
 		Var.coinY3 = -4000;
 
 		movement = new Timer();
 		movement.scheduleAtFixedRate(new TimerTask() {
 			@Override
 			public void run() {
-				if (Var.inGame) {   //passiert nur wenn man nicht im Spiel ist
+				if (Var.inGame) {   //passiert nur wenn man im Spiel ist
 					for (int i = 0; i <= 4; i++) {
-						Var.coinY1[i] += Var.coinspeed1[i]; //durch for-Schleife werden alle Münzen um ihre Geshw. bewegt
+						Var.coinY1[i] += Var.coinspeed1[i]; //durch for-Schleife werden alle Münzen um ihre Geschw. bewegt
 
-						if (Var.coinY1[i] >= Var.screenHeight) {//falls sie nichtmehr zu sehen sind werden sie nach oben versetzt und bekommen einen neuen zufälligen X-wert zugeschrieben
+						if (Var.coinY1[i] >= Var.screenHeight) {//falls sie nicht mehr zu sehen sind werden sie nach oben versetzt und bekommen einen neuen zufälligen X-wert zugeschrieben
 							Var.coinY1[i] = -1500;
 							Var.coinX1[i] = (int)(Math.random()*1900);
 						}
