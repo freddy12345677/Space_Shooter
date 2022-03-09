@@ -12,7 +12,7 @@ public class ActionHandler implements ActionListener {
 			Var.inShop = false;
 			Var.inMenu = false;
 			Var.inOptions = false;
-			Var.btnresume.setVisible(false);//durch setVisible werden die Gewollten Buttons angezeigt 
+			Var.btnresume.setVisible(false);//durch setVisible werden die gewollten Buttons angezeigt 
 		    Var.btnshop.setVisible(false);
 			Var.btnexit.setVisible(false);
 
