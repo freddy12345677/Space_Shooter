@@ -140,6 +140,10 @@ public class Var {
 		coinspeed2[1] = 3;
 		
 		
+		coinY2[0] = -200;
+		coinY2[1] = -200;
+		
+		
 		
 		
 		

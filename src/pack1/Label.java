@@ -23,19 +23,21 @@ public class Label extends JLabel {
 
 		Graphics2D g2d = (Graphics2D) g;
 		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-
-		if (Var.inGame) { // Damit sichn alles nur bewegt wenn keine Pause gedrückt wird
-
-			g.drawImage(Var.ib1, 0, Var.backgroundY1, 1920, 1080, null); //Bilder der Hintergründe werden angezeigt
+		
+		
+		
+		if (Var.inGame) { // Damit sich alles nur bewegt wenn keine Pause gedrückt wird
+			
+			g.drawImage(Var.ib1, 0, Var.backgroundY1, 1920, 1080, null); //Bilder der bewegenden Hintergründe werden angezeigt
 			g.drawImage(Var.ib2, 0, Var.backgroundY2, 1920, 1080, null);
 
-			if (Var.flammeanimation == 1) {
+			if (Var.flammeanimation == 1) {//2 zustande der Flammenanimation je nachdem welche der beide Flammen angezeigt werde soll
 				g.drawImage(Var.iflamme1, Var.x + 25, Var.y + 130, 100, 100, null);//Die Beiden Bilder der Antribsflammen animation werden angezeigt
 			} else if (Var.flammeanimation == 0) {
 				g.drawImage(Var.iflamme2, Var.x + 25, Var.y + 130, 100, 100, null);
 			}
 
-			for (int i = 0; i <= 4; i++) {
+			for (int i = 0; i <= 4; i++) {//durch for 
 				g.drawImage(Var.icoin1, Var.coinX1[i], Var.coinY1[i], 80, 80, null); // Alle Münzen der WErtigkeit 1 von dem Array werden angezeigt
 
 			}
@@ -62,7 +64,7 @@ public class Label extends JLabel {
 
 			g.drawImage(Var.iplayer, Var.x, Var.y, 150, 150, null); // Spieler wird angezeigt
 
-			if (Var.shieldactive == 1) {        //Schuld um den Spieler wird angezeigt wenn er ein Schild gekauft hat
+			if (Var.shieldactive == 1) {        //Schuld um den Spieler wird angezeigt wenn er ein Schild gekauft hat 
 				g.drawImage(Var.ishield, Var.x, Var.y, 150, 150, null);
 			}
 
@@ -139,6 +141,8 @@ public class Label extends JLabel {
 					g.drawImage(Var.iexplosion[11], Var.x, Var.y, 120, 120, null);
 					g.setColor(new Color(230, 0, 0, 45));
 				}
+				 
+				
 
 			}
 			repaint();

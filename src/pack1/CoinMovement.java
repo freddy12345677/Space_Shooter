@@ -14,10 +14,15 @@ public class CoinMovement {
 
 			temp += 600;
 		}
+		
 		Var.coinX2[0] = (int)(Math.random()*1900);  //  allen Münzen der Wertigkeit 5 wird eine Position zugewiesen
 		Var.coinX2[1] = (int)(Math.random()*1900);
 		Var.coinY2[0] = -2000;
 		Var.coinY2[1] = -3000;
+		Var.coinY2[2] = -2000;
+		Var.coinY2[3] = -3000;
+		Var.coinY2[4] = -2000;
+		
 
 	Var.coinX3 = (int)(Math.random()*1900);// Der MÜnze der Wertigkeit 10 wird eine Position zugewiesen
 		Var.coinY3 = -4000;
