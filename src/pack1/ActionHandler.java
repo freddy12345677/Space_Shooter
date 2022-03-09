@@ -62,7 +62,7 @@ public class ActionHandler implements ActionListener {
 				Var.ammo +=1; //man bekommt ein Schuss
 			}
 
-			Var.jf1.requestFocus();   // Buttons werden angezeigt
+			Var.jf1.requestFocus();   //Buttons werden angezeigt
 
 		}
 
