@@ -78,7 +78,7 @@ public class Label extends JLabel {
 				g.drawImage(Var.iheart, 10, 10, 100, 100, null);
 			} else if (Var.hp == 2) {
 				g.drawImage(Var.iheart, 10, 10, 100, 100, null);
-				g.drawImage(Var.iheart, 120, 0, 100, 100, null);
+				g.drawImage(Var.iheart, 120, 10, 100, 100, null);
 			} else if (Var.hp == 3) {
 				g.drawImage(Var.iheart, 10, 10, 100, 100, null);
 				g.drawImage(Var.iheart, 120, 10, 100, 100, null);
@@ -114,7 +114,7 @@ public class Label extends JLabel {
 
 				
 			}
-			repaint();
+			repaint();//zeigt alles an
 
 		} else if (Var.lost) {
 			//Was angezeigt wird wenn  an Verloren hat
